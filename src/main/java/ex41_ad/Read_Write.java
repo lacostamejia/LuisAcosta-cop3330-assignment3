@@ -1,4 +1,4 @@
-package ex41_d;
+package ex41_ad;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,7 +15,6 @@ public class Read_Write {
             Scanner in = new Scanner(MyFile);
             while(in.hasNextLine()){
                 String name =  in.nextLine();
-                System.out.println(name);
                 names.add(name); //Adding the names to the list
             }
         } catch (FileNotFoundException e){ //If there was an error

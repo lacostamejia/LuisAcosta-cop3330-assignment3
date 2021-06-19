@@ -1,0 +1,25 @@
+@startuml
+
+Class Main{
++main()
++name: String
++author: String
++Java File: String
++CCS File: String
+}
+
+Class Generator{
++Gen(name, author, Java File, CCS File: String, String, String, String): void
++website: File
++name_website: File
++f1: File
++J: File
++CS: File
+}
+
+Main --> Generator
+
+
+
+
+@enduml
