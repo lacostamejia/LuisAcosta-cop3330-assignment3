@@ -1,4 +1,4 @@
-package ex42_ad;
+package ex42_d;
 /*
 Pseudocode
 
@@ -6,10 +6,11 @@ Pseudocode
 We have to create new file object to read the file
 we are going to use try and catch to check if there was an error reading the file
 
-2. Save the information and sort it - How we are going to sort it?
-we are going to save the information in some type that we can have name, last name, and salary. //Check
+2.
+We are going to save the information in some type that we can have name, last name, and salary.
+We are going to save all the data in array of string
 
-3. Export the information into a txt.
+3. Print the information in form of a table.
 
 
 Constraints:

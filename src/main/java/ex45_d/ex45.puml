@@ -1,0 +1,17 @@
+@startuml
+
+
+class ex45{
++function: new Read_Write
++name_file : string
++find : string
++main()
+
+}
+class Read_Write{
++Reading(String find, String name_file)
+}
+ex45 --> Read_Write
+
+
+@enduml

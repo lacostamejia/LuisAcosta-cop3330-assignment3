@@ -1,0 +1,24 @@
+@startuml
+
+Class Main{
++static void main()
+
++Collections.sort: names
++names: Arraylist
++design: String [] = {-----------------}
+
+}
+
+Class Read_Write{
+
++reading(inout names: Arraylist):void
+
++writing(inout names, design: Arraylist, String):void
+
+}
+
+Main --> Read_Write: (1) Sending information\n to the read method of the class
+Read_Write-->Main: (2) Sending back the list with the names
+Main --> Read_Write: (3) Calling the write function, in order to write them to the output file.
+Read_Write --> Output: (4) Outputting the values
+@enduml

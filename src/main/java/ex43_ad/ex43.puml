@@ -17,9 +17,8 @@ Class Generator{
 +CS: File
 }
 
-Main --> Generator
-
-
+Main --> Generator: (1) Pass the information to the \n method Gen of the Generator class.
+Generator--> Print: (2) Print the values from the void \nfunction Gen
 
 
 @enduml

@@ -1,4 +1,4 @@
-package ex41_ad;
+package ex41_d;
 
 //Pseudocode
 /*
@@ -28,7 +28,6 @@ Output is closed.
  */
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class ex41 {
     public static void main(String[] args){
@@ -41,7 +40,6 @@ public class ex41 {
         import_export.Reading(names); //Using the method to read.
         System.out.println(" ");
 
-        Collections.sort(names); //It is sorted.
 
         import_export.Writing(names,design); //Using the method to write.
 

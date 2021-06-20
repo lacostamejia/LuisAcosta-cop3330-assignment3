@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
++class ex42{
++Obj = new Parse_Data
++line: String
++data: String
++main()
+}
++class Parse_Data{
++Solution(String line, String data [] ):void
+}
+ex42-->Parse_Data: (1) Passing the information of the data and line\n to the method Solution, in order to \n do parse the data
+Parse_Data--> Print:(2) Print all the information from the method Solution
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class ex46{
++map: Hashmap
++sorted_map: TreeMap
++MyObj: new Read_Count
++main()
+}
+class Read_Count{
++Solution(Map map): void
++Order(Map map, TreeMap sorted_map): void
+}
+ex46-->Read_Count: Calling the Solution() method,\n and Sending Information (1)
+Read_Count -[#0000FF]->ex46 :Sending back the \ninformation processed (2)
+ex46 -->Read_Count: Calling the Order(),\n and Sending Information (3)
+Read_Count --> print: Here we are printing the values of the treemap (4))
+
+
+@enduml

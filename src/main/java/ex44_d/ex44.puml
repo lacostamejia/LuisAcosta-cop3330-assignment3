@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class ex44{
++name : String
++lol : Boolean
++parse : new JSON_function
++main()
+}
+class JSON_function{
++Parse(String find)
+}
+
+ex44 --> JSON_function: (1) Sending all the information so \n we can parse the text file JSON
+
+
+
+@enduml

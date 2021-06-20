@@ -1,4 +1,4 @@
-package ex46_ad;
+package ex46_d;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -13,8 +13,7 @@ public class Read_Count {
         String saved = "";
         String [] bank_words = new String[0];
 
-
-        int counter = 0; //Used to count the occuriences of a word
+        int counter = 0; //Used to count the occurrences of a word
 
         try{
             BufferedReader br = new BufferedReader(new FileReader("exercise46_input.txt")); //Reading
@@ -28,27 +27,20 @@ public class Read_Count {
             System.out.println(" ");
             //Now let's convert each word of the string into an array of words //Working!
             bank_words = saved.split("\\W+");
-           /* for(int i = 0; i < bank_words.length; i++){
-                System.out.println(bank_words[i]); //Here we are printing to double check; so now let's identify the pairs.
-            }
-            */
+
             //Here we are doing two for loops to iterate each word to the other words in the same array.
             for(int i = 0; i < bank_words.length; i++){
                 for(int j = 0; j < bank_words.length; j++){
                     if(bank_words[i].equals(bank_words[j])){
-                        //We just found one counter
+                        //We just found one ; so let's count it
                         counter++;
                     }
                 }
                 map.put(bank_words[i],counter); //Working , we are using maps since the keys are original, and the values can override; so we obtain the max count always for that exact key.
                     counter = 0;
             }
-            //Here we are printing to double-check.
-            /*for(Map.Entry m : map.entrySet()) {
-                System.out.println(m.getKey() + " " + m.getValue());
-            }
-*/
-            }catch (FileNotFoundException e){
+
+        }catch (FileNotFoundException e){
             e.printStackTrace();
         }catch (IOException e){
             e.printStackTrace();
