@@ -1,4 +1,4 @@
-package ex43_ad;
+package ex43_d;
 /*
 
  */
@@ -12,6 +12,14 @@ We have to use functions to create a file
 first we are going to get all the information such as name, author and decisions on the main file
 then we are going to create a generator class and create an object of that class inside the main class
 
+Site name: awesomeco
+Author: Max Power
+Do you want a folder for JavaScript? y
+Do you want a folder for CSS? y
+Created ./website/awesomeco
+Created ./website/awesomeco/index.html
+Created ./website/awesomeco/js/
+Created ./website/awesomeco/css/
 //Completed
  */
 
